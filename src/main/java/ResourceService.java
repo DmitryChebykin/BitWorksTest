@@ -10,8 +10,6 @@ import java.util.stream.Collectors;
 public class ResourceService {
     private Map<Resource, Owner> resourceMap;
 
-    private ResourceSetterDto resourceSetter;
-
     public void rearrangeResource(ResourceSetterDto resourceSetterDto) {
         Set<Resource> firstTimeOwnedResources = getFirstTimeOwnedResources(resourceSetterDto);
 
