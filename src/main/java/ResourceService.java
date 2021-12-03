@@ -37,7 +37,7 @@ public class ResourceService {
 
             if ((resources.size() - 1) >= minResourceSize[0] && !resourceSetterDto.isLowPriority()) {
                 resourceMap.put(e, dtoOwner);
-                minResourceSize[0]++;
+                minResourceSize[0] = minResourceSize[0] + 1;
             }
         });
 
